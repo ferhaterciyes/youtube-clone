@@ -10,13 +10,13 @@ const Feed = () => {
   return (
     <div className="flex gap-3">
       <SideBar />
-      <div className="videos ">
+      <div className="videos">
         {/* videolar yoksa yükleniyor bas
          * varsa videoları dön
          * video olan her biri için ekrana cart bas
          */}
         {!videos ? (
-          <Loading />
+          <Loading type={"video"} />
         ) : (
           videos.map(
             (item) =>

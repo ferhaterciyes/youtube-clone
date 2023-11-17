@@ -5,7 +5,7 @@
 body {
   background: black;
   color: white;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .videos {
@@ -41,4 +41,10 @@ body {
     gap: 50px;
     padding: 20px;
   }
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 169px auto;
+  gap: 10px;
 }
