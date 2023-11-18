@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import { getData } from "../helpers/getData";
 import Loading from "../components/loader/loading";
 import VideoCart from "./../components/videoCart/videoCart";
+import VideoComments from "../components/VideoComments";
 const VideoDetail = () => {
   const { id } = useParams();
   const [related, setRelated] = useState(null);
@@ -23,6 +24,9 @@ const VideoDetail = () => {
           url={`https://www.youtube.com/watch?v=${id}`}
         />
         <VideoInfo />
+        <div className=" my-5">
+      <VideoComments />
+      </div>
       </div>
       <div className="max-md:w-full lg:max-w-[400px] lg:max-w-[300px]: flex flex-col px-3 max-lg:my-5 gap-5">
         {!related ? (
@@ -35,7 +39,9 @@ const VideoDetail = () => {
               ),
           )
         )}
+
       </div>
+  
     </div>
   );
 };
