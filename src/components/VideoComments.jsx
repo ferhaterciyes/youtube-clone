@@ -30,10 +30,11 @@ export const VideoComments = () => {
           <p className="font-bold leading-7">{comments.length} Yorum</p>
           <div className="flex gap-2">
             <svg
+              style={{ width: "24px" }}
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
               focusable="false"
-              className="pointer-events-none w-6 block w-full h-full"
+              className="pointer-events-none block w-full h-full"
             >
               <path
                 fill="currentColor"
